@@ -20,6 +20,5 @@ def average_pieces_per_category(pretzels: int, raisins: int, chocolate: int) -> 
 
 if __name__ == "__main__":
     pieces = total_items(12, 8, 10)
-    print(f"Trail mix pieces: {pieces}")
-    print(f"Complete servings of 5: {servings_possible(pieces, 5)}")
-    print(f"Average pieces per category: {average_pieces_per_category(12, 8, 10)}")
+    servings = servings_possible(pieces, 5)
+    print(f"Complete servings of 5: {servings}")
